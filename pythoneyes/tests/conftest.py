@@ -28,7 +28,7 @@ def app():
 
 
 @pytest.yield_fixture(scope='function')
-def client():
+def client(app):
     '''
     Setup an app client, this get executed for each test function
 

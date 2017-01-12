@@ -3,7 +3,7 @@ from flask import Flask
 from pythoneyes.blueprints.page import page
 
 
-def create_app():
+def create_app(settings_override=None):
     """
     Create a Flask application using the app factory pattern.
 
